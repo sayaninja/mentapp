@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,600,700" rel="stylesheet" />
+    <link href="css/find-mentor.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+  <!--Navigation bar-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Men<span>Tapp</span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#feature">About us</a></li>
+          <li><a href="find-mentor.html">Find Mentor</a></li>
+          <li><a href="inspiration.html">Inspiration</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+          <li class="btn-trial"><a href="#footer">Free Trail</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Navigation bar-->
+    <div class="s009">
+      <form>
+        <div class="inner-form">
+          <div class="basic-search">
+            <div class="input-field">
+              <input id="search" type="text" placeholder="Type Keywords" />
+              <div class="icon-wrap">
+                <svg class="svg-inline--fa fa-search fa-w-16" fill="#ccc" aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="advance-search">
+            <span class="desc">ADVANCED SEARCH</span>
+            <div class="row">
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Price</option>
+                    <option>Price b</option>
+                    <option>Price c</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Language</option>
+                    <option>Language b</option>
+                    <option>Language c</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Profession</option>
+                    <option>Profession b</option>
+                    <option>Profession c</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row second">
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Rating</option>
+                    <option>Rating b</option>
+                    <option>Rating c</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Years of Experience</option>
+                    <option>less than 1 year></option>
+                    <option>2-3 years</option>
+                    <option>more than 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field">
+                <div class="input-select">
+                  <select data-trigger="" name="choices-single-defaul">
+                    <option placeholder="" value="">Type</option>
+                    <option>Subject b</option>
+                    <option>Subject c</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row third">
+              <div class="input-field">
+                <div class="result-count">
+                  <span>108 </span>results</div>
+                <div class="group-btn">
+                  <button class="btn-delete" id="delete">RESET</button>
+                  <button class="btn-search"><a href="find-mentors-result.html">SEARCH</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+  <script src="js/extention/choices.js"></script>
+    <script>
+      const customSelects = document.querySelectorAll("select");
+      const deleteBtn = document.getElementById('delete')
+      const choices = new Choices('select',
+      {
+        searchEnabled: false,
+        itemSelectText: '',
+        removeItemButton: true,
+      });
+      deleteBtn.addEventListener("click", function(e)
+      {
+        e.preventDefault()
+        const deleteAll = document.querySelectorAll('.choices__button')
+        for (let i = 0; i < deleteAll.length; i++)
+        {
+          deleteAll[i].click();
+        }
+      });
+
+    </script>
+  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
