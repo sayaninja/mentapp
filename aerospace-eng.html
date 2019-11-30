@@ -1,65 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-</head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Найди своего профессионального наставника</title>
-<meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-<meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
-<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- =======================================================
-  Theme Name: Mentor
-  Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-  Author: BootstrapMade.com
-  Author URL: https://bootstrapmade.com
-======================================================= -->
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="css/slick.css"/>
+    <link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+    <!-- nouislider -->
+    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/find-mentors-result.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--    <link href="css/mentor.css" rel="stylesheet" media="all">-->
+
 </head>
 <body>
-<!--Navigation bar-->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">PROF<span>MENTOR</span></a>
+
+    <!--Navigation bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">PROF<span>MENTOR</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#feature">О ПРОЕКТЕ</a></li>
+                    <li><a href="#professions">ПРОФЕССИИ</a></li>
+                    <li><a href="#partners">НАШИ ПАРТНЕРЫ</a></li>
+                    <li><a href="#pricing">ЦЕНЫ</a></li>
+                    <li><a href="#" data-target="#login" data-toggle="modal">Войти</a></li>
+                    <li class="btn-trial"><a href="#footer">FAQ</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://157.245.214.0/index.html#feature">О ПРОЕКТЕ</a></li>
-                <li><a href="find-mentor.html">ПРОФЕССИИ</a></li>
-                <li><a href="inspiration.html">НАШИ ПАРТНЕРЫ</a></li>
-                <li><a href="http://157.245.214.0/index.html#pricing">ЦЕНЫ</a></li>
-                <li><a href="#" data-target="#login" data-toggle="modal">FAQ</a></li>
-            </ul>
+    </nav>
+    <!--/ Navigation bar-->
+
+    <!--Modal box-->
+    <div class="modal fade" id="booktime" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+            <!-- Modal content no 1-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center form-title">Запись на консультацию</h4>
+                </div>
+                <div class="modal-body padtrbl">
+
+                    <div class="login-box-body">
+<!--                        <div class="form-group">-->
+<!--                            <form name="" id="loginForm">-->
+<!--                                <div class="form-group has-feedback">-->
+<!--                                    &lt;!&ndash;-&#45;&#45; username &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--                                    <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />-->
+<!--                                    <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>-->
+<!--                                    &lt;!&ndash;-Alredy exists  ! &ndash;&gt;-->
+<!--                                    <span class="glyphicon glyphicon-user form-control-feedback"></span>-->
+<!--                                </div>-->
+<!--                                <div class="form-group has-feedback">-->
+<!--                                    &lt;!&ndash;-&#45;&#45; password &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;-->
+<!--                                    <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />-->
+<!--                                    <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>-->
+<!--                                    &lt;!&ndash;-Alredy exists  ! &ndash;&gt;-->
+<!--                                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>-->
+<!--                                </div>-->
+<!--                                <div class="row">-->
+<!--                                    <div class="col-xs-12">-->
+<!--                                        <div class="checkbox icheck">-->
+<!--                                            <label>-->
+<!--                                                <input type="checkbox" id="loginrem">Запомнить</label>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-xs-12">-->
+<!--                                        <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </form>-->
+<!--                        </div>-->
+                        <div class="card-body">
+                            <form method="POST">
+                                <div class="form-row">
+                                    <div class="name">Full name</div>
+                                    <div class="value">
+                                        <input class="input--style-6" type="text" name="full_name">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="name">Email address</div>
+                                    <div class="value">
+                                        <div class="input-group">
+                                            <input class="input--style-6" type="email" name="email" placeholder="example@email.com">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="name">Message</div>
+                                    <div class="value">
+                                        <div class="input-group">
+                                            <textarea class="textarea--style-6" name="message" placeholder="Message sent to the employer"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="name">Upload CV</div>
+                                    <div class="value">
+                                        <div class="input-group js-input-file">
+                                            <input class="input-file" type="file" name="file_cv" id="file">
+                                            <label class="label--file" for="file">Choose file</label>
+                                            <span class="input-file__info">No file chosen</span>
+                                        </div>
+                                        <div class="label--desc">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn--radius-2 btn--blue-2" type="submit">Send Application</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-</nav>
-<div class="intro-para text-center quote">
-    <p class="big-text">Консультация c</p>
-    <p class="small-text">$25/час</p>
-    <img src="img/MOSTlogobusinessincubator.png" alt="" class="img-thumbnail img-square" />
-    <a href="find-mentor.html" class="btn get-quote btn-lg">Aerospace Engineer - ?</a>
-    <div class="intro-para text-center quote">
-        <p class="big-text">Консультация c</p>
-        <p class="small-text">$25/час</p>
-        <img src="img/MOSTlogobusinessincubator.png" alt="" class="img-thumbnail img-square" />
-        <a href="find-mentor.html" class="btn get-quote btn-lg">Aerospace Engineer - Талгат </a>
+    <!--/ Modal box-->
+
+    <!-- SECTION -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+
+                <!-- Products tab & slick -->
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="products-tabs">
+                            <!-- tab -->
+                            <div id="tab1" class="tab-pane active">
+                                <div class="products-slick" data-nav="#slick-nav-1">
+                                    <!-- product -->
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <img src="./img/woman.jpg" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                            <p class="product-category">Category</p>
+                                            <h3 class="product-name"><a href="#">Mentor A</a></h3>
+                                            <h4 class="product-price">$40.00</h4>
+                                            <div class="product-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <div class="product-btns">
+                                                <a href="https://www.youtube.com/watch?v=dcXtRy2209U" data-toggle="modal">Video</a>
+                                            </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a href="#" data-target="#booktime" data-toggle="modal">Book time</a>
+                                        </div>
+                                    </div>
+                                    <!-- /product -->
+
+                                    <!-- product -->
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <img src="./img/man.jpg" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                            <p class="product-category">Category</p>
+                                            <h3 class="product-name"><a href="#">Mentor Be</a></h3>
+                                            <h4 class="product-price">$30.00</h4>
+                                            <div class="product-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                            </div>
+                                            <div class="product-btns">
+                                                <a href="https://www.youtube.com/watch?v=dcXtRy2209U" data-toggle="modal">Video</a>
+                                            </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a href="#" data-target="#booktime" data-toggle="modal">Book time</a>
+                                        </div>
+                                    </div>
+                                    <!-- /product -->
+
+                                    <!-- product -->
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <img src="./img/woman.jpg" alt="">
+                                        </div>
+                                        <div class="product-body">
+                                            <p class="product-category">Category</p>
+                                            <h3 class="product-name"><a href="#">Mentor C</a></h3>
+                                            <h4 class="product-price">$20.00</h4>
+                                            <div class="product-rating">
+                                            </div>
+                                            <div class="product-btns">
+                                                <a href="https://www.youtube.com/watch?v=dcXtRy2209U" data-toggle="modal">Video</a>
+                                            </div>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a href="#" data-target="#booktime" data-toggle="modal">Book time</a>
+                                        </div>
+                                    </div>
+                                    <!-- /product -->
+
+                                </div>
+                                <div id="slick-nav-1" class="products-slick-nav"></div>
+                            </div>
+                            <!-- /tab -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Products tab & slick -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
     </div>
-    <body>
+    <!-- /SECTION -->
 
-    <body>
 
-    </body>
+
+    <!-- jQuery Plugins -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/find-mentors-result.js"></script>
+</body>
 </html>
