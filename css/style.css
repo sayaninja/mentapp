@@ -4,7 +4,22 @@
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
 */
-
+.how-it-works{
+    text-align: center;
+}
+.stepsCont{
+    display: inline-block;
+    padding: 35px;
+    flex-wrap: wrap;
+}
+.stepImg{
+    height: 150px;
+    width: 150px;
+}
+.stepImg1{
+    height: 100px;
+    width: 100px;
+}
 
 section {
     padding-top: 100px;
