@@ -9,16 +9,8 @@
 }
 .stepsCont{
     display: inline-block;
-    padding: 35px;
-    flex-wrap: wrap;
-}
-.stepImg{
-    height: 150px;
-    width: 150px;
-}
-.stepImg1{
-    height: 100px;
-    width: 100px;
+    padding: 20px;
+    flex-wrap: wrap; 
 }
 
 section {
