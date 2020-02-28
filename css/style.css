@@ -170,12 +170,12 @@ Banner
 .banner{
 	background: url('../img/bg-banner.jpg') no-repeat center top;
     background-size: cover;
-	min-height: 790px;
+	min-height: 500px;
     position: relative;
 }
 .bg-color{
-	background-color: RGBA(12, 11, 11, 0.82);
-	min-height: 790px;
+	background-color: RGBA(12, 11, 11, 0.70);
+	min-height: 500px;
 }
 .text-dec{
 	font-size: 24px;
@@ -271,7 +271,7 @@ Banner
     padding-right: 0px;
 }
 .big-text{
-    font-size: 35px;
+    font-size: 25px;
 }
 .small-text{
     font-size: 16px;
@@ -445,6 +445,15 @@ Work Shop
 /***********************************
 Mentor Team
 ************************************/
+.profs{
+    width:50%;
+    float:left;
+}
+.link_wrap li{
+    text-align: left;
+    border: 1px solid #C6C6C6;
+    width: 250px;
+}
 .pm-staff-profile-image{
   width: 150px;
   height: 150px;
@@ -607,10 +616,19 @@ Contact Us
 /***********************************
 Footer
 ************************************/
+.wrap{
+    width:50%;
+    float:left;
+    text-align: center;
+    color: #808080;   
+}
+
 .footer {
-    padding: 60px 0 20px;
-    background: #111;
+    padding: 40px 0 20px;
+    background: white;
     color: #ccc;
+    border-top: 0.1px solid #dcdcdc;
+
 }
 .footer a {
     color: #fff;
