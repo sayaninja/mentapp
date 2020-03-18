@@ -174,7 +174,7 @@ Banner
     position: relative;
 }
 .bg-color{
-	background-color: RGBA(12, 11, 11, 0.70);
+	background-color: RGBA(12, 11, 11, 0.40);
 	min-height: 500px;
 }
 .text-dec{
