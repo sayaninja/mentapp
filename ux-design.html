@@ -68,43 +68,33 @@
                 <div class="login-box-body">
                     <div class="card-body">
                         <form method="POST">
+                            <input id="mentor_input" type="hidden" name="mentor" value=""/>
                             <div class="form-row">
-                                <div class="name">Full name</div>
+                                <div class="name">ФИО</div>
                                 <div class="value">
-                                    <input class="input--style-6" type="text" name="full_name">
+                                    <input class="input--style-6" type="text" name="name" required>
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="name">Email address</div>
+                                <div class="name">Емайл</div>
                                 <div class="value">
                                     <div class="input-group">
-                                        <input class="input--style-6" type="email" name="email" placeholder="example@email.com">
+                                        <input class="input--style-6" type="email" name="email" placeholder="example@email.com" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="name">Message</div>
+                                <div class="name">Комментарии</div>
                                 <div class="value">
                                     <div class="input-group">
-                                        <textarea class="textarea--style-6" name="message" placeholder="Message sent to the employer"></textarea>
+                                        <textarea class="textarea--style-6" name="message" placeholder="Напишите удобныe для Вас дни и времена для консультации"></textarea>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="name">Upload CV</div>
-                                <div class="value">
-                                    <div class="input-group js-input-file">
-                                        <input class="input-file" type="file" name="file_cv" id="file">
-                                        <label class="label--file" for="file">Choose file</label>
-                                        <span class="input-file__info">No file chosen</span>
-                                    </div>
-                                    <div class="label--desc">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
-                                </div>
+                            <div class="card-footer">
+                                <button class="btn btn--radius-2 btn--blue-2" type="submit">Отправить</button>
                             </div>
                         </form>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn--radius-2 btn--blue-2" type="submit">Send Application</button>
                     </div>
                 </div>
             </div>
@@ -112,6 +102,7 @@
     </div>
 </div>
 <!--/ Modal box-->
+
 <!-- SECTION -->
 <div class="section">
     <!-- container -->
@@ -147,7 +138,7 @@
                                         </div>
                                     </div>
                                     <div class="add-to-cart">
-                                        <a href="#" data-target="#booktime" data-toggle="modal">Записаться</a>
+                                        <a href="#" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Mentor A')">Записаться</span></a>
                                     </div>
                                 </div>
                                 <!-- /product -->
@@ -159,7 +150,7 @@
                                     </div>
                                     <div class="product-body">
                                         <p class="product-category">Category</p>
-                                        <h3 class="product-name"><a href="#">Mentor Be</a></h3>
+                                        <h3 class="product-name"><a href="#">Mentor B</a></h3>
                                         <h4 class="product-price">$30.00</h4>
                                         <div class="product-rating">
                                             <i class="fa fa-star"></i>
@@ -173,7 +164,7 @@
                                         </div>
                                     </div>
                                     <div class="add-to-cart">
-                                        <a href="#" data-target="#booktime" data-toggle="modal">Записаться</a>
+                                        <a href="#" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Mentor B')">Записаться</span></a>
                                     </div>
                                 </div>
                                 <!-- /product -->
@@ -194,7 +185,7 @@
                                         </div>
                                     </div>
                                     <div class="add-to-cart">
-                                        <a href="#" data-target="#booktime" data-toggle="modal">Записаться</a>
+                                        <a href="#" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Mentor C')">Записаться</span></a>
                                     </div>
                                 </div>
                                 <!-- /product -->
@@ -221,5 +212,6 @@
 <script src="js/nouislider.min.js"></script>
 <script src="js/jquery.zoom.min.js"></script>
 <script src="js/find-mentors-result.js"></script>
+<script src="js/send-form.js"></script>
 </body>
 </html>
