@@ -922,11 +922,11 @@ textarea.input {
 }
 
 .product .product-body .product-name>a:hover, .product .product-body .product-name>a:focus {
-  color: #D10024;
+  color: #8D99AE;
 }
 
 .product .product-body .product-price {
-  color: #D10024;
+  color: #8D99AE;
   font-size: 18px;
 }
 
@@ -952,7 +952,7 @@ textarea.input {
 }
 
 .product .product-body .product-rating>i.fa-star {
-  color: #ef233c;
+  color: #8D99AE;
 }
 
 .product .product-body .product-rating:after {
@@ -1020,7 +1020,7 @@ textarea.input {
   right: 1px;
   bottom: 1px;
   padding: 15px;
-  background: #1e1f29;
+  background: #F5F5F5;
   text-align: center;
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
@@ -2173,6 +2173,15 @@ textarea.input {
   .section-tab-nav li {
     margin-top: 10px;
   }
+}
+/*=========================================================
+	13 -> MODAL BOX
+===========================================================*/
+#booktime{
+   color: #1a83cf;
+}
+#submit_style{
+  border: 1px solid #8D99AE ; 
 }
 
 @media only screen and (max-width: 480px) {
