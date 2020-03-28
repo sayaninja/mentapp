@@ -71,7 +71,7 @@ function handleBookingSubmit() {
     form.attachEvent('onsubmit', sendBookingData);
   }
 }
-
+  
 handleBookingSubmit();
 
 
@@ -80,8 +80,11 @@ function beforeBookingSend(event) {
 }
 function handleBookingSuccess(response) {
   alert('successfully send');
+  $('#booktime').modal('hide');
   //do some after successful sending
 }
+
+
 function handleBookingError(response) {
   //do some stuff after getting error
 }

@@ -109,6 +109,8 @@ jQuery(document).ready(function($) {
           $("#errormessage").addClass("show");
           $('#errormessage').html(msg);
         }
+        $('.contactForm').removeClass("show");
+
 
       }
     });

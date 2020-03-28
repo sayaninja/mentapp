@@ -491,13 +491,13 @@ textarea {
 .input--style-6,
 .textarea--style-6 {
   background: transparent;
-  line-height: 38px;
+  line-height: 30px;
   border: 1px solid #cccccc;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   color: #666;
-  font-size: 15px;
+  font-size: 8px;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -556,7 +556,7 @@ textarea {
 }
 
 .label--desc {
-  font-size: 13px;
+  font-size: 8px;
   color: #999;
   margin-top: 10px;
 }
