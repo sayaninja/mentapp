@@ -80,6 +80,7 @@ function beforeBookingSend(event) {
 }
 function handleBookingSuccess(response) {
   alert('successfully send');
+  $('#booktime').modal('hide');
   //do some after successful sending
 }
 
