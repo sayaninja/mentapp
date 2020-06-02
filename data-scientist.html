@@ -109,6 +109,63 @@
     </div>
 </div>
 <!--/ Modal box-->
+	
+	<!--Modal box-->
+<div class="modal fade" id="booktime" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <!-- Modal content no 1-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 id="booktime" class="modal-title text-center form-title">Запись на подготовку к интервью</h4>
+            </div>
+            <div class="modal-body padtrbl">
+                <div class="login-box-body">
+                    <div class="card-body">
+                        <form method="POST" id="appForm">
+                            <input id="mentor_input" type="hidden" name="mentor" value=""/>
+                            <div class="form-row">
+                                <div class="name">Ф.И.О.</div>
+                                <div class="value">
+                                    <input class="input--style-6" type="text" name="name" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="name">e-mail</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <input class="input--style-6" type="email" name="email" placeholder="example@gmail.com" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="name">Телефон</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                         <input class="input--style-6" type="tel" id="phone" name="phone" placeholder="+7 777 777 00 00" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="name">Время и дата</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <textarea class="textarea--style-6" name="message" placeholder="Заполните удобное для вас время и дату для консультации. Например: 27/03/20202 18-00"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button id="submit_style" class="btn btn--radius-2 btn--blue-2" type="submit">Отправить заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ Modal box-->
+	
 	<!--/ Banner-->
 <!--Feature-->
 	 
@@ -148,7 +205,7 @@
                                     <div class="product-body">
                                       <p class="product-category">Asia SEEK, Asia Pacific University</p>
                                       <h3 class="product-name"><a href="#">Dara T.</a></h3>
-                                      <h4 class="product-price">Консультация</h4>
+                                      <h4 class="product-price">Data scientist</h4>
                                         <div class="product-rating">
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
@@ -174,13 +231,13 @@
                                     <div class="product-body">
                                         <p class="product-category">UCL, Wimmer Solutions-Microsoft, Kolesa Group</p>
                                         <h3 class="product-name"><a href="#">Catherine R.</a></h3>
-                                        <h4 class="product-price">консультация</h4>
+                                        <h4 class="product-price">Data scientist</h4>
                                         <div class="product-rating">
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-o"></i>
+                                            <i class="fa fa-star"></i>
                                         </div>
                                         <div class="product-btns">
                                             <button class="quick-view"><a href="https://www.youtube.com/watch?v=5eeCZC4e8BI" data-toggle="modal"><i class="fa fa-eye"></i><span class="tooltipp">Короткое интерью</span></button></a>
@@ -200,13 +257,13 @@
                                     <div class="product-body">
                                       <p class="product-category">KCell, Beeline, Huawei KZ</p>
                                       <h3 class="product-name"><a href="#">Miras D.</a></h3>
-                                      <h4 class="product-price">консультация</h4>
+                                      <h4 class="product-price">Data scientist</h4>
                                        <div class="product-rating">
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
                                         </div>
                                         <div class="product-btns">
                                             <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Короткое интерью</span></button>
@@ -216,11 +273,7 @@
                                         <a href="#" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Miras D.')">Записаться</span></a>
                                     </div>
                                 </div>
-				     </div>
-                                    <div class="add-to-cart">
-                                        <a href="#" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Miras D.')">Подготовка к интервью</span></a>
-                                    </div>
-				
+				    				
                                 <!-- /product -->
 				
 				  <!-- Products tab & slick -->
@@ -239,7 +292,7 @@
                                     <div class="product-body">
                                         <p class="product-category">The London Institute of Banking & Finance, Facebook, Paddy Power Betfair</p>
                                         <h3 class="product-name"><a href="#">Anelya N.</a></h3>
-                                        <h4 class="product-price"></h4>
+                                        <h4 class="product-price">Data analyst</h4>
                                         <div class="product-rating">
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
@@ -261,12 +314,12 @@
 			    <!-- product -->
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="./img/meruert_A_DA.jpg" alt="">
+                                        <img src="./img/meruert_A_DA2.jpg" alt="">
                                     </div>
                                     <div class="product-body">
                                         <p class="product-category">Nazarbayev University, BTS Digital</p>
                                         <h3 class="product-name"><a href="#">Meruyert A.</a></h3>
-                                        <h4 class="product-price"></h4>
+                                        <h4 class="product-price">Data analyst</h4>
                                         <div class="product-rating">
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
@@ -287,12 +340,12 @@
 			    <!-- product -->
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="./img/DS Dara T.2.jpg" alt="">
+                                        <img src="./img/Yerlan DA.jpg" alt="">
                                     </div>
                                     <div class="product-body">
-                                      <p class="product-category">Asia SEEK, Asia Pacific University</p>
-                                      <h3 class="product-name"><a href="#">Dara T.</a></h3>
-                                      <h4 class="product-price">Консультация</h4>
+                                      <p class="product-category">University of Edinburgh, Tengizchevroil</p>
+                                      <h3 class="product-name"><a href="#">Yerlan N.</a></h3>
+                                      <h4 class="product-price">Data analyst</h4>
                                         <div class="product-rating">
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
@@ -305,7 +358,7 @@
                                         </div>
                                     </div>
                                     <div class="add-to-cart">
-                                        <a href="#" class="product-name" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Dara T.')">Записаться</span></a>
+                                        <a href="#" class="product-name" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Yerlan Nurushev')">Записаться</span></a>
                                     </div>
                                 </div>
                                 <!-- /product -->
