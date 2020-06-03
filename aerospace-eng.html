@@ -58,53 +58,60 @@
     <!--/ Navigation bar-->
 
     <!--Modal box-->
-    <div class="modal fade" id="booktime" role="dialog">
-        <div class="modal-dialog modal-sm">
-            <!-- Modal content no 1-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 id="booktime" class="modal-title text-center form-title">Запись на консультацию</h4>
-                </div>
-                <div class="modal-body padtrbl">
-                    <div class="login-box-body">
-                        <div class="card-body">
-                            <form method="POST" id="appForm">
-                                <input id="mentor_input" type="hidden" name="mentor" value=""/>
-                                <div class="form-row">
-                                    <div class="name">ФИО</div>
-                                    <div class="value">
-                                        <input class="input--style-6" type="text" name="name" required>
+<div class="modal fade" id="booktime" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <!-- Modal content no 1-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 id="booktime" class="modal-title text-center form-title">Запись на консультацию</h4>
+            </div>
+            <div class="modal-body padtrbl">
+                <div class="login-box-body">
+                    <div class="card-body">
+                        <form method="POST" id="appForm">
+                            <input id="mentor_input" type="hidden" name="mentor" value=""/>
+                            <div class="form-row">
+                                <div class="name">Ф.И.О.</div>
+                                <div class="value">
+                                    <input class="input--style-6" type="text" name="name" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="name">e-mail</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <input class="input--style-6" type="email" name="email" placeholder="example@gmail.com" required>
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="name">Емайл</div>
-                                    <div class="value">
-                                        <div class="input-group">
-                                            <input class="input--style-6" type="email" name="email" placeholder="example@email.com" required>
-                                        </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="name">Телефон</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                         <input class="input--style-6" type="tel" id="phone" name="phone" placeholder="+7 777 777 00 00" required>
                                     </div>
                                 </div>
-                                <div class="form-row">
-                                    <div class="name">Комментарии</div>
-                                    <div class="value">
-                                        <div class="input-group">
-                                            <textarea class="textarea--style-6" name="message" placeholder="Напишите удобныe для Вас дни и времена для консультации"></textarea>
-                                        </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="name">Время и дата</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <textarea class="textarea--style-6" name="message" placeholder="Заполните удобное для вас время и дату для консультации. Например: 27/03/20202 18-00"></textarea>
                                     </div>
                                 </div>
-                                <div class="card-footer">
-                                    <button id="submit_style" class="btn btn--radius-2 btn--blue-2" type="submit">Отправить</button>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="card-footer">
+                                <button id="submit_style" class="btn btn--radius-2 btn--blue-2" type="submit">Отправить заявку</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--/ Modal box-->
-
+</div>
+<!--/ Modal box-->
     <!-- SECTION -->
     <div class="section">
         <!-- container -->
@@ -122,12 +129,12 @@
                                     <!-- product -->
                                     <div class="product">
                                         <div class="product-img">
-                                            <img src="./img/woman.jpg" alt="">
+                                            <img src="./img/Nafiza_aerospace.jpg" alt="">
                                         </div>
                                         <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name"><a href="#">Mentor A</a></h3>
-                                            <h4 class="product-price">$40.00</h4>
+                                            <p class="product-category">SGAC,the United Nations, NASA</p>
+                                            <h3 class="product-name"><a href="#">Nafiza B.</a></h3>
+                                            <h4 class="product-price">Aerospace engineer</h4>
                                             <div class="product-rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -140,7 +147,7 @@
                                             </div>
                                         </div>
                                         <div class="add-to-cart">
-                                            <a href="#" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Mentor A')">Записаться</span></a>
+                                            <a href="#" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Nafiza B.')">Записаться</span></a>
                                         </div>
                                     </div>
                                     <!-- /product -->
@@ -153,7 +160,7 @@
                                         <div class="product-body">
                                             <p class="product-category">Category</p>
                                             <h3 class="product-name"><a href="#">Mentor B</a></h3>
-                                            <h4 class="product-price">$30.00</h4>
+                                            <h4 class="product-price">Aerospace engineer</h4>
                                             <div class="product-rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -179,7 +186,7 @@
                                         <div class="product-body">
                                             <p class="product-category">Category</p>
                                             <h3 class="product-name"><a href="#">Mentor C</a></h3>
-                                            <h4 class="product-price">$20.00</h4>
+                                            <h4 class="product-price">Aerospace engineer</h4>
                                             <div class="product-rating">
                                             </div>
                                             <div class="product-btns">
