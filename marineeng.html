@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="css/slick.css"/>
+    <link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+    <!-- nouislider -->
+    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/find-mentors-result.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<!--Navigation bar-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">PROF<span>MENTOR</span></a>
+    </div>
+</nav>
+<!--/ Navigation bar-->
+
+<!--Modal box-->
+<div class="modal fade" id="booktime" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <!-- Modal content no 1-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 id="booktime" class="modal-title text-center form-title">Запись на консультацию</h4>
+            </div>
+            <div class="modal-body padtrbl">
+                <div class="login-box-body">
+                    <div class="card-body">
+                        <form method="POST" id="appForm">
+                            <input id="mentor_input" type="hidden" name="mentor" value=""/>
+                            <div class="form-row">
+                                <div class="name">Ф.И.О.</div>
+                                <div class="value">
+                                    <input class="input--style-6" type="text" name="name" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="name">e-mail</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <input class="input--style-6" type="email" name="email" placeholder="example@gmail.com" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="name">Телефон</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                         <input class="input--style-6" type="tel" id="phone" name="phone" placeholder="+7 777 777 00 00" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="name">Время и дата</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <textarea class="textarea--style-6" name="message" placeholder="Заполните удобное для вас время и дату для консультации. Например: 27/03/20202 18-00"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button id="submit_style" class="btn btn--radius-2 btn--blue-2" type="submit">Отправить заявку</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ Modal box-->
+	
+	
+	
+	<!--/ Banner-->
+<!--Feature-->
+	 
+<section id="feature" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="header-section text-center">
+                <h2>Marine Engineer </h2>
+		    
+                <p>Marine Engineering - это те, кто изучает и работают в морской и береговой структуре, а так же термодинамике и океанарии.
+                 <p>Общие дисциплины «Морской инженерии» включают: </p>
+ <p>- Морское машиносроение, </p>
+ <p>- Морской и береговой дизайн, </p>
+ <p>-Метеорология </p>
+ <p>-Физика </p>
+ <p>-Исчисление, </p>
+ <p>-Химия</p> 
+
+</p>
+				<div class="header-section text-left">
+                </div>
+		    
+			    <img align="center" width="550" height="750" src="img/datascinfo.jpg">
+           
+                        </div>
+		</div>
+                                        <div class="product-btns">
+                                             <button align="center" class="quick-view"><a href="https://learn.datacamp.com/" data-toggle="modal"></i><span class="tooltipp">Отличный ресурс, чтобы "Начать практику"</span></button></a>
+                                        </div>
+			<!--Feature-->
+<!-- SECTION -->
+<div class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+
+            <!-- Products tab & slick -->
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="products-tabs">
+                        <!-- tab -->
+                        <div id="tab1" class="tab-pane active">
+                            <div class="products-slick" data-nav="#slick-nav-1">
+                                <!-- product -->
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./img/DS Dara T.3.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                      <p class="product-category">Asia SEEK, Asia Pacific University</p>
+                                      <h3 class="product-name"><a href="#">Dara T.</a></h3>
+                                      <h4 class="product-price">Data scientist</h4>
+                                        <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="product-btns">
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Короткое интерью</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Dara T.')">30-минутная консультация</span></a>
+<!-- Calendly link widget end --><span onclick="setMentor('Dara T.')"></span></a>
+                                    </div>
+                                </div>
+                                <!-- /product -->
+
+                                <!-- product -->
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./img/Ekaterina R. data scientist.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p class="product-category">UCL, Wimmer Solutions-Microsoft, Kolesa Group</p>
+                                        <h3 class="product-name"><a href="#">Catherine R.</a></h3>
+                                        <h4 class="product-price">Data scientist</h4>
+                                        <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="product-btns">
+                                            <button class="quick-view"><a href="https://www.youtube.com/watch?v=5eeCZC4e8BI" data-toggle="modal"><i class="fa fa-eye"></i><span class="tooltipp">Короткое интерью</span></button></a>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart">
+                                        <a href="#" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Catherine R.')">30-минутная консультация</span></a>
+                                    </div>
+                                </div>
+                                <!-- /product -->
+
+                                <!-- product -->
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./img/Miras_DS.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                      <p class="product-category">KCell, Beeline, Huawei KZ</p>
+                                      <h3 class="product-name"><a href="#">Miras D.</a></h3>
+                                      <h4 class="product-price">Data scientist</h4>
+                                       <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="product-btns">
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Короткое интерью</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart">
+                                         <a href="#" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Miras D.')">30-минутная консультация</span></a>
+                                    </div>
+                                </div>
+				    				
+                                <!-- /product -->
+				
+				              
+                                <!-- product -->
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./img/Anelya N_DA.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                      <p class="product-category">The London Institute of Banking & Finance, Facebook, Paddy Power Betfair</p>
+                                      <h3 class="product-name"><a href="#">Anelya N.</a></h3>
+                                      <h4 class="product-price">Data analyst</h4>
+                                        <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="product-btns">
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Короткое интерью</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart">
+                                       <a href="#" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Anelya N.')">30-минутная консультация</span></a>
+                                    </div>
+                                </div>
+                                <!-- /product -->
+
+                                <!-- product -->
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./img/meruert_A_DA2.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                        <p class="product-category">Nazarbayev University, BTS Digital</p>
+                                        <h3 class="product-name"><a href="#">Meruyert A.</a></h3>
+                                        <h4 class="product-price">Data analyst</h4>
+                                        <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <div class="product-btns">
+                                            <button class="quick-view"><a href="https://www.youtube.com/watch?v=5eeCZC4e8BI" data-toggle="modal"><i class="fa fa-eye"></i><span class="tooltipp">Короткое интерью</span></button></a>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart">
+                                      <a href="#" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Meruyert A.')">30-минутная консультация</span></a>
+                                    </div>
+                                </div>
+                                <!-- /product -->
+
+                                <!-- product -->
+                                <div class="product">
+                                    <div class="product-img">
+                                        <img src="./img/Yerlan DA.jpg" alt="">
+                                    </div>
+                                    <div class="product-body">
+                                      <p class="product-category">University of Edinburgh, Tengizchevroil</p>
+                                      <h3 class="product-name"><a href="#">Yerlan N.</a></h3>
+                                      <h4 class="product-price">Data analyst</h4>
+                                       <div class="product-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div>
+                                        <div class="product-btns">
+                                            <button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Короткое интерью</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="add-to-cart">
+                                       <a href="#" data-target="#booktime" data-toggle="modal"><span onclick="setMentor('Yerlan N.')">30-минутная консультация</span></a>
+                                    </div>
+                                </div>
+				    				
+                                <!-- /product --> 
+				    
+				    
+				
+   </div>
+
+                            </div>
+                            <div id="slick-nav-1" class="products-slick-nav"></div>
+                        </div>
+                        <!-- /tab -->
+                    </div>
+                </div>
+            </div>
+            <!-- Products tab & slick -->
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /SECTION -->
+
+<!-- jQuery Plugins -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/jquery.zoom.min.js"></script>
+<script src="js/find-mentors-result.js"></script>
+<script src="js/send-form.js"></script>
+</body>
+</html>
